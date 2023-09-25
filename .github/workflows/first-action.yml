@@ -1,6 +1,6 @@
 name: Github Action for Maven # The name of the workflow
 
-on: [push] # Trigger the workflow on push events, on every comments
+on: [push] # Trigger the workflow on push events, on every commit
 
 jobs:
   build:
@@ -16,5 +16,5 @@ jobs:
           distribution: 'zulu'
           architecture: x64
 
-      - name: Run the Maven verify phase # Run the Maven build process
-        run: mvn --batch-mode --update-snapshots verify
+      - name: Run Maven clean install # Run the Maven clean install process
+        run: mvn clean install

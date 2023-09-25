@@ -31,7 +31,7 @@
                 <version>2.1</version>
                 <executions>
                     <execution>
-                        <phase>clean</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>shade</goal>
                         </goals>
