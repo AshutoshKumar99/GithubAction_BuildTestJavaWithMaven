@@ -1,3 +1,7 @@
+# Author: Ashutosh Kumar
+# Date: 2023-09-25
+# Version: 1.0
+
 name: Github Action for Maven # The name of the workflow
 
 on: [push] # Trigger the workflow on push events, on every commit
@@ -16,5 +20,5 @@ jobs:
           distribution: 'zulu'
           architecture: x64
 
-      - name: Run maven clean # Run the Maven clean 
-        run: mvn clean 
+      - name: Run Maven clean and package # Run the Maven clean and package
+        run: mvn clean package #perform both the clean and package phases of the Maven build lifecycle. This command will clean the project and then package it into a distributable format (e.g., JAR) as specified in your project's configuration.
