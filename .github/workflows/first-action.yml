@@ -16,5 +16,5 @@ jobs:
           distribution: 'zulu'
           architecture: x64
 
-      - name: Run Maven clean install # Run the Maven clean install process
-        run: mvn clean install
+      - name: Run Maven clean package # Run the Maven clean package process
+        run: mvn clean package
